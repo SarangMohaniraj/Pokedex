@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopUp"
+    android:background="@drawable/pop_up_background"
+    android:elevation="50dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/id_toolbar_popup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkDark"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:title="Instructions"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/id_instructions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Click to see some attributes of the pokemon\n\nClick + Hold to all of the attributes of the pokemon\n\nUse the search bar to search for pokemon or types\n\nClick on a pokemon's type to filter by all pokemon with that type"
+        android:textColor="@color/darkDark"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_toolbar_popup" />
+</android.support.constraint.ConstraintLayout>

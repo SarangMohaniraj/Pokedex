@@ -1,0 +1,165 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#3F51B5</item>
+        <item name="colorPrimaryDark">#46352a</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorType1">@android:color/white</item>
+        <item name="colorType2">@android:color/white</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@android:color/white</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.PopUp" parent="AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+    <style name="bug" parent="AppTheme">
+        <item name="colorType1">@color/bug</item>
+        <item name="colorType2">@color/bug</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/bugDark</item>
+        <item name="colorAccent">@color/bugLight</item>
+    </style>
+
+    <style name="dark" parent="AppTheme">
+        <item name="colorType1">@color/dark</item>
+        <item name="colorType2">@color/dark</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/darkDark</item>
+        <item name="colorAccent">@color/darkLight</item>
+    </style>
+
+    <style name="dragon" parent="AppTheme">
+        <item name="colorType1">@color/dragon</item>
+        <item name="colorType2">@color/dragon</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/dragonDark</item>
+        <item name="colorAccent">@color/dragonLight</item>
+    </style>
+
+    <style name="electric" parent="AppTheme">
+        <item name="colorType1">@color/electric</item>
+        <item name="colorType2">@color/electric</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/electricDark</item>
+        <item name="colorAccent">@color/electricLight</item>
+    </style>
+
+    <style name="fairy" parent="AppTheme">
+        <item name="colorType1">@color/fairy</item>
+        <item name="colorType2">@color/fairy</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/fairyDark</item>
+        <item name="colorAccent">@color/fairyLight</item>
+    </style>
+
+    <style name="fighting" parent="AppTheme">
+        <item name="colorType1">@color/fighting</item>
+        <item name="colorType2">@color/fighting</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/fightingDark</item>
+        <item name="colorAccent">@color/fightingLight</item>
+    </style>
+
+    <style name="fire" parent="AppTheme">
+        <item name="colorType1">@color/fire</item>
+        <item name="colorType2">@color/fire</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/fireDark</item>
+        <item name="colorAccent">@color/fireLight</item>
+    </style>
+
+    <style name="flying" parent="AppTheme">
+        <item name="colorType1">@color/flying</item>
+        <item name="colorType2">@color/flying</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/flyingDark</item>
+        <item name="colorAccent">@color/flyingLight</item>
+    </style>
+
+    <style name="ghost" parent="AppTheme">
+        <item name="colorType1">@color/ghost</item>
+        <item name="colorType2">@color/ghost</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/ghostDark</item>
+        <item name="colorAccent">@color/ghostLight</item>
+    </style>
+
+    <style name="grass" parent="AppTheme">
+        <item name="colorType1">@color/grass</item>
+        <item name="colorType2">@color/grass</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/grassDark</item>
+        <item name="colorAccent">@color/grassLight</item>
+    </style>
+
+    <style name="ground" parent="AppTheme">
+        <item name="colorType1">@color/ground</item>
+        <item name="colorType2">@color/ground</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/groundDark</item>
+        <item name="colorAccent">@color/groundLight</item>
+    </style>
+
+    <style name="ice" parent="AppTheme">
+        <item name="colorType1">@color/ice</item>
+        <item name="colorType2">@color/ice</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/iceDark</item>
+        <item name="colorAccent">@color/iceLight</item>
+    </style>
+
+    <style name="mystery" parent="AppTheme">
+        <item name="colorType1">@color/mystery</item>
+        <item name="colorType2">@color/mystery</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/mysteryDark</item>
+        <item name="colorAccent">@color/mysteryLight</item>
+    </style>
+
+    <style name="normal" parent="AppTheme">
+        <item name="colorType1">@color/normal</item>
+        <item name="colorType2">@color/normal</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/normalDark</item>
+        <item name="colorAccent">@color/normalLight</item>
+    </style>
+
+    <style name="poison" parent="AppTheme">
+        <item name="colorType1">@color/poison</item>
+        <item name="colorType2">@color/poison</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/poisonDark</item>
+        <item name="colorAccent">@color/poisonLight</item>
+    </style>
+
+    <style name="psychic" parent="AppTheme">
+        <item name="colorType1">@color/psychic</item>
+        <item name="colorType2">@color/psychic</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/psychicDark</item>
+        <item name="colorAccent">@color/psychicLight</item>
+    </style>
+
+    <style name="rock" parent="AppTheme">
+        <item name="colorType1">@color/rock</item>
+        <item name="colorType2">@color/rock</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/rockDark</item>
+        <item name="colorAccent">@color/rockLight</item>
+    </style>
+
+    <style name="steel" parent="AppTheme">
+        <item name="colorType1">@color/steel</item>
+        <item name="colorType2">@color/steel</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/steelDark</item>
+        <item name="colorAccent">@color/steelLight</item>
+    </style>
+
+    <style name="water" parent="AppTheme">
+        <item name="colorType1">@color/water</item>
+        <item name="colorType2">@color/water</item>  <!-- colorType2 will only be changed if there is another type -->
+        <item name="colorHeader">@color/waterDark</item>
+        <item name="colorAccent">@color/waterLight</item>
+    </style>
+
+
+
+
+</resources>

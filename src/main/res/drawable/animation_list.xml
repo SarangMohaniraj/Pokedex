@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/gradient_fighting"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_fairy"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_psychic"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_poison"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_ghost"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_dragon"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_flying"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_water"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_mystery"
+        android:duration="5000"/>
+
+
+    <item
+        android:drawable="@drawable/gradient_ice"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_steel"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_grass"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_bug"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_electric"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_ground"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_rock"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_normal"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_dark"
+        android:duration="5000"/>
+
+    <item
+        android:drawable="@drawable/gradient_fire"
+        android:duration="5000"/>
+
+
+
+
+
+</animation-list>

@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stats">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/id_backgroundType2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:background="?attr/colorType2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_backgroundType1"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/id_backgroundType1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="?attr/colorType1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/id_backgroundType2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardElevation="24dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_background">
+
+            <ImageView
+                android:id="@+id/id_stats_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.103"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_name"
+                app:layout_constraintVertical_bias="0.064"
+                app:srcCompat="@drawable/blastoise" />
+
+            <TextView
+                android:id="@+id/id_stats_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorHeader"
+                android:gravity="center_vertical|center_horizontal"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="Name"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/id_stats_type1"
+                android:layout_width="48dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.601"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_name"
+                app:layout_constraintVertical_bias="0.044"
+                app:srcCompat="@drawable/bug" />
+
+            <ImageView
+                android:id="@+id/id_stats_type2"
+                android:layout_width="48dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="6dp"
+                app:layout_constraintBottom_toBottomOf="@+id/id_stats_type1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/id_stats_type1"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_type1"
+                app:srcCompat="@drawable/bug" />
+
+            <TextView
+                android:id="@+id/id_stats_index"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:text="#001"
+                app:layout_constraintBottom_toBottomOf="@+id/id_stats_type2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/id_stats_type2"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_type2" />
+
+            <ProgressBar
+                android:id="@+id/id_stats_hp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="6dp"
+                android:max="252"
+                android:progressTint="?attr/colorType1"
+                android:scaleY="3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_index"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/id_stats_type1"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_type2"
+                app:layout_constraintVertical_bias="0.018" />
+
+            <ProgressBar
+                android:id="@+id/id_stats_attack"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="252"
+                android:progressTint="?attr/colorType1"
+                android:scaleY="3"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_defense"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_hp"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_hp"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_hp" />
+
+            <ProgressBar
+                android:id="@+id/id_stats_defense"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="252"
+                android:progressTint="?attr/colorType1"
+                android:scaleY="3"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_speed"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_attack"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_attack"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_attack" />
+
+            <ProgressBar
+                android:id="@+id/id_stats_speed"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="252"
+                android:progressTint="?attr/colorType1"
+                android:scaleY="3"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_spAtk"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_defense"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_defense"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_defense" />
+
+            <ProgressBar
+                android:id="@+id/id_stats_spAtk"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="252"
+                android:progressTint="?attr/colorType1"
+                android:scaleY="3"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_speed"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_speed"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_speed" />
+
+            <ProgressBar
+                android:id="@+id/id_stats_spDef"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:max="252"
+                android:progressTint="?attr/colorType1"
+                android:scaleY="3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_spAtk"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_spAtk"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_spAtk"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/holder_hp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HP"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_attack"
+                app:layout_constraintEnd_toStartOf="@+id/id_stats_hp"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/holder_defense"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_hp" />
+
+            <TextView
+                android:id="@+id/holder_attack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attack"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_defense"
+                app:layout_constraintEnd_toStartOf="@+id/id_stats_attack"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/holder_defense"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_attack" />
+
+            <TextView
+                android:id="@+id/holder_defense"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defense"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_speed"
+                app:layout_constraintEnd_toStartOf="@+id/id_stats_defense"
+                app:layout_constraintHorizontal_bias="0.94"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_defense" />
+
+            <TextView
+                android:id="@+id/holder_speed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_spAtk"
+                app:layout_constraintEnd_toStartOf="@+id/id_stats_speed"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/holder_defense"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_speed" />
+
+            <TextView
+                android:id="@+id/holder_spAtk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sp. Atk"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_spDef"
+                app:layout_constraintEnd_toStartOf="@+id/id_stats_spAtk"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/holder_speed"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_spAtk" />
+
+            <TextView
+                android:id="@+id/holder_spDef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sp. Def"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toBottomOf="@+id/id_stats_spDef"
+                app:layout_constraintEnd_toStartOf="@+id/id_stats_spDef"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/holder_spAtk"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_spDef" />
+
+            <TextView
+                android:id="@+id/progress_hp"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_attack"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_hp"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_hp"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_hp" />
+
+            <TextView
+                android:id="@+id/progress_atk"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_defense"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_attack"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_attack"
+                app:layout_constraintTop_toBottomOf="@+id/progress_hp" />
+
+            <TextView
+                android:id="@+id/progress_def"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_speed"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_defense"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_defense"
+                app:layout_constraintTop_toBottomOf="@+id/progress_atk" />
+
+            <TextView
+                android:id="@+id/progress_speed"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_spAtk"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_speed"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_defense" />
+
+            <TextView
+                android:id="@+id/progress_spAtk"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@+id/id_stats_spDef"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_spAtk"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_spAtk"
+                app:layout_constraintTop_toBottomOf="@+id/progress_speed" />
+
+            <TextView
+                android:id="@+id/progress_spDef"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:gravity="left|center_vertical"
+                android:text="0"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/id_stats_spDef"
+                app:layout_constraintEnd_toEndOf="@+id/id_stats_spDef"
+                app:layout_constraintStart_toStartOf="@+id/id_stats_spDef"
+                app:layout_constraintTop_toBottomOf="@+id/progress_spAtk" />
+
+            <TextView
+                android:id="@+id/id_stats_height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Height:"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.193"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_name"
+                app:layout_constraintVertical_bias="0.455" />
+
+            <TextView
+                android:id="@+id/id_stats_heightInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="5' 11&quot;"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/id_stats_height"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_name"
+                app:layout_constraintVertical_bias="0.455" />
+
+            <TextView
+                android:id="@+id/id_stats_weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight:"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toBottomOf="@+id/id_stats_height"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.623"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_height"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/id_stats_weightInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="112 lbs"
+                android:textColor="@color/darkDark"
+                app:layout_constraintBottom_toBottomOf="@+id/id_stats_weight"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/id_stats_weight"
+                app:layout_constraintTop_toTopOf="@+id/id_stats_weight"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/id_stats_description"
+                android:layout_width="250dp"
+                android:layout_height="150dp"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="Ivysaur is pretty intense in the TV series, but he is really balanced and not too interesting. Spice it up a bit more. If you didn't notice, it looks like his bulb is sprouting, so eventually can he get energy from photosynthesis????"
+                android:textColor="@color/darkDark"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_name"
+                app:layout_constraintVertical_bias="0.833" />
+
+            <ImageButton
+                android:id="@+id/id_stats_sound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_sound"
+                android:elevation="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.103"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/id_stats_image"
+                app:layout_constraintVertical_bias="0.029999971"
+                app:srcCompat="@drawable/ic_sound" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:elevation="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.912"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.942"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+</android.support.constraint.ConstraintLayout>
